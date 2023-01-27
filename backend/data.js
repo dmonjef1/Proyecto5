@@ -1,4 +1,4 @@
-const data = {
+/*const data = {
     productos: [
         {
             name: 'Macbook Air',
@@ -47,4 +47,4 @@ const data = {
     ]
 };
 
-export default data;
+export default data;*/

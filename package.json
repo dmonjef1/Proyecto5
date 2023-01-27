@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "proyecto5",
   "version": "1.0.0",
   "description": "",
@@ -16,4 +17,9 @@
     "url": "https://github.com/dmonjef1/Proyecto5/issues"
   },
   "homepage": "https://github.com/dmonjef1/Proyecto5#readme"
+=======
+  "dependencies": {
+    "node": "^19.4.0"
+  }
+>>>>>>> 5c9320581c2e33091246e994c93378e10201fff6
 }

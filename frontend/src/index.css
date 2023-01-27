@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  background-color: #F7DC6F;
+  padding: 1rem;
+}
+
+header a {
+  color: #34495E;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.producto {
+  border: 1px #404040 solid;
+  margin: 1rem;
+}
+
+.producto img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.info-producto {
+  padding: 1rem;
+}

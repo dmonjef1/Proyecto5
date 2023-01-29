@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-/*import express from 'express';
-import data from './data.js';
-import dotenv from 'dotenv';
-
-dotenv.config();
-
-const app = express();
-// test
-app.get('/api/products', (req, res) => {
-  res.send(data.products);
-});
-=======
 import express from "express"
 import cors from "cors"
 import dotenv from "dotenv"
@@ -36,5 +23,4 @@ app.listen(port, ()=>{console.log(`listent in port ${port}`)})
 
 
 
->>>>>>> origin/dylan
 

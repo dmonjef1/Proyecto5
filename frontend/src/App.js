@@ -2,21 +2,34 @@
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from "./screens/ProductScreen";
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import {LinkContainer} from 'react-router-bootstrap';
 
 function App() {
   return (
     <BrowserRouter>
-    <div>
+    <div className="d-flex flex-column site-container">
       <header>
-        <Link to="/">Proyecto Ecommerce</Link>
+        <Navbar>
+          <Container>
+        <LinkContainer to="/">
+          <Navbar.Brand>Proyecto Ecommerce</Navbar.Brand>
+        </LinkContainer>
+        </Container>
+        </Navbar>
       </header>
       <main>
+        <Container>
         <Routes>
-          <Route path="/producto/:slug" element={<ProductScreen />} />
+          <Route path="/products/:slug" element={<ProductScreen />} />
           <Route path="/" element={<HomeScreen/>} />
         </Routes>
-        
+        </Container>     
       </main>
+      <footer>
+        <div className="text-center">Todo los derechos reservados por DMONJE/SCORTESC</div>
+      </footer>
     </div>
     </BrowserRouter>
   );

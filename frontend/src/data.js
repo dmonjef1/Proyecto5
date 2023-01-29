@@ -1,5 +1,5 @@
 const data = {
-    productos: [
+    products: [
         {
             name: 'Macbook Air',
             slug: 'macbook-air',

@@ -1,22 +1,26 @@
 import express from "express"
-import mongoose from "mongoose"
+import cors from "cors"
 import dotenv from "dotenv"
-
-
-const app = express()
-app.get("/", (req,res)=>{
-  res.send("ok!")
-})
-
-app.use(express.json())
+import {connectDb} from "../backend/config/database.js"
+import productsRouter from "./routes/user.route.js" 
 
 dotenv.config()
-mongoose.set('strictQuery', true);
-mongoose.connect(process.env.MONGODB)
-.then(()=>{console.log("mongo connect") })
-.catch(error =>{
-    console.log(error)
-})
+const app = express()
+const port= process.env.PORT || 5000
 
-app.listen(5000, ()=>console.log(`Servidor Conectado en puerto : 5000`))
+
+connectDb()
+app.use(cors())
+app.use(express.json())
+app.get( '/', function ( req, res ) {
+  res.json( { message: "hola mundo" } );
+} );
+app.use(productsRouter)
+
+app.listen(port, ()=>{console.log(`listent in port ${port}`)})
+
+
+
+
+
 

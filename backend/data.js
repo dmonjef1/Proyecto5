@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 /*const data = {
     productos: [
+=======
+const data = {
+    products: [
+>>>>>>> origin/seba
         {
             name: 'Macbook Air',
             slug: 'macbook-air',

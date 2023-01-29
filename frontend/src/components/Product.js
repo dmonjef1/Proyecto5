@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import Rating from './Rating.js';
-import "../index.css";
+
 
 function Product(props) {
     const { product } = props;

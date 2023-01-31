@@ -23,6 +23,25 @@ export const createProducts = async (req, res)=>{
       }
 }
 
+export const getProductById = async ( req, res ) => {
+  const id = req.params.id
+  const product = await Product.findById( id )
+  res.json( product )
+}
+
+export const updateProductById = async ( req, res ) => {
+  const body = req.body
+  const id = req.params.id
+  const productUpdated = await Product.findByIdAndUpdate( id, body, { new: true } )
+  res.json( productUpdated )
+}
+
+export const deleteProductById = async ( req, res ) => {
+  const id = req.params.id
+  const productRemoved = await Product.findByIdAndDelete( id )
+  res.json( productRemoved )
+}
+
 
 
 

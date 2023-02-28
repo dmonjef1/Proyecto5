@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -58,4 +59,30 @@ main {
 
 .img-large {
   max-width: 100%;
+<<<<<<< HEAD
+=======
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-control {
+  height: 40px;
+  font-size: 18px;
+}
+
+.btn-buscar {
+  margin-left: 10px;
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
+.form-buscar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+>>>>>>> 932055e5e97c757a2d61685392ffa583b4f50884
 }

@@ -59,6 +59,8 @@ main {
 
 .img-large {
   max-width: 100%;
+<<<<<<< HEAD
+=======
 }
 
 .container {
@@ -82,4 +84,5 @@ main {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+>>>>>>> 932055e5e97c757a2d61685392ffa583b4f50884
 }

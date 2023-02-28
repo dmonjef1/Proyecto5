@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+.App {
+=======
 /*.App {
+>>>>>>> 932055e5e97c757a2d61685392ffa583b4f50884
   text-align: center;
 }
 
@@ -36,6 +40,8 @@
     transform: rotate(360deg);
   }
 }
+<<<<<<< HEAD
+=======
 
 .navbar {
   background-color: var(--primary-color);
@@ -91,3 +97,4 @@
 }
 
 
+>>>>>>> 932055e5e97c757a2d61685392ffa583b4f50884

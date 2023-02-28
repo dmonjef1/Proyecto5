@@ -8,6 +8,18 @@ export const getProducts = async ( req, res ) => {
     res.json( products )
 }
 
+export const getProductById = async ( req, res ) => {
+  const id = req.params.id
+  const product = await Product.findById( id )
+  res.json( product )
+}
+export const getProductbyName = async (req,res) => {
+  const name = req.params.slug
+  const type= await Product.find( name)
+  res.json(type)
+ 
+}
+
 export const createProducts = async (req, res)=>{
     const body = req.body
     try {
@@ -23,11 +35,6 @@ export const createProducts = async (req, res)=>{
       }
 }
 
-export const getProductById = async ( req, res ) => {
-  const id = req.params.id
-  const product = await Product.findById( id )
-  res.json( product )
-}
 
 export const updateProductById = async ( req, res ) => {
   const body = req.body
